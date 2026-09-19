@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla de Formulario - Registro e Inicio de Sesión</title>
+    <style>
+        :root {
+            --fondo-pagina: #00CED1; /* Cambia este color o pon url('imagen.jpg') */
+            --color-tarjeta: #E0FFFF;
+        }
+
+        body {
+            background: var(--fondo-pagina);
+            font-family: sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            
+            /* Centrado del formulario en pantalla */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        form {
+            background-color: var(--color-tarjeta);
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Espaciado simple para no encimar elementos */
+        div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<form action="formulario.html" method="POST" enctype="multipart/form-data">
+        <h2>Registro de Usuario Nexora Games</h2>
+"Mary Jane.prproj"
+        <fieldset>
+          <legend>Información Personal</legend>
+
+            <div>
+                <label for="nombre">Texto simple (Nombre):</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Daniel Isaac" required>
+            </div>
+
+            <div>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="alphaomega2943@gmail.com" required>
+            </div>
+
+            <div>
+                <label for="password">Contraseña:</label>
+              <input type="password" id="Fenix" name="Fenix" >
+            </div>
+
+          <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="222-802-6211">
+          </div>
+<div>
+      <label for="edad">Número (Edad):</label>
+                <input type="number" id="edad" name="edad" min="18" max="99" value="17">
+          </div>
+      </fieldset>
+
+      <fieldset>
+            <legend>Fecha</legend>
+
+        <div>
+          <label for="nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="nacimiento" name="nacimiento">
+        </div>
+</fieldset>
+
+        <fieldset>
+            <legend>Preferencias y Opciones</legend>
+
+          <div>
+                <p><strong>Nivel de Experiencia del usuario:</strong></p>
+                <input type="radio" id="principiante" name="experiencia" value="principiante" checked>
+                <label for="principiante" style="display:inline;">Principiante</label><br>
+                
+                <input type="radio" id="intermedio" name="experiencia" value="intermedio">
+                <label for="intermedio" style="display:inline;">Intermedio</label><br>
+                
+                <input type="radio" id="avanzado" name="experiencia" value="avanzado">
+                <label for="avanzado" style="display:inline;">Avanzado</label>
+          </div>
+<div>
+      <label for="pais">País (Desplegable / Select):</label>
+                <select id="pais" name="pais">
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="mx">México</option>
+                    <option value="es">España</option>
+                    <option value="co">Colombia</option>
+                    <option value="ar">Argentina</option>
+                </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contenido y Archivos</legend>
+
+            <div>
+              <label for="avatar">&nbsp;</label>
+            </div>
+
+            <div>
+                <label for="color-favorito">Color de Marca (Selector de Color):</label>
+                <input type="color" id="color-favorito" name="color-favorito" value="#3b82f6">
+            </div>
+
+            <div>
+                <label for="satisfaccion">Nivel de Satisfacción (Rango):</label>
+                <input type="range" id="satisfaccion" name="satisfaccion" min="0" max="100" value="50">
+            </div>
+
+            <div>
+                <label for="biografia">Semblanza / Bio (Área de Texto):</label>
+                <textarea id="biografia" name="biografia" rows="4" placeholder="Hola soy Alpha Omega y mi deseo es jugar los juegos de su empresa"></textarea>
+            </div>
+        </fieldset>
+<div>
+	<button type="submit">registrarse</button>
+</div>
+</form>
+
+</body>
+</html>
